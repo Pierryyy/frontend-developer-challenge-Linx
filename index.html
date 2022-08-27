@@ -8,19 +8,19 @@
     <title>Linx</title>
   </head>
   <body>
-    <header>
-      <h3 class="header-1">Uma selecção de produtos</h3>
-      <h2 class="header-2"><strong>especial para você</strong></h2>
+    <header class="header-background">
+      <h5 class="header-1">Uma selecção de produtos</h5>
+      <h4 class="header-2"><strong>especial para você</strong></h4>
       <p class="header-3">
         Todos os produtos desta lista foram selecionados a partir da sua
         navegação. Aproveite!
       </p>
 
       <section class="buttons-header container">
-        <div class="btn-header"><h3 class="text-header">Conheça a Linx</h3></div>
-        <div class="btn-header"><h3 h3 class="text-header">Ajude o algoritmo</h3></div>
-        <div class="btn-header"><h3 h3 class="text-header">Seus produtos</h3></div>
-        <div class="btn-header"><h3 h3 class="text-header">Compartilhe</h3></div>
+        <button class="btn-header"><h3 class="text-header">Conheça a Linx</h3></button>
+        <button class="btn-header"><h3 h3 class="text-header">Ajude o algoritmo</h3></button>
+        <button class="btn-header"><h3 h3 class="text-header">Seus produtos</h3></button>
+        <button class="btn-header"><h3 h3 class="text-header">Compartilhe</h3></button>
       </section>
     </header>
     <main>
@@ -35,8 +35,10 @@
             quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia
             euismod augue vel egestas. Class aptent taciti sociosqu ad litora
             torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel
-            urna tortor. Vivamus et arcu non felis tristique eleifend. Morbi eu
-            condimentum urna. Curabitur eu magna eget turpis condimentum ultrices.
+            urna tortor. Vivamus et arcu non felis tristique eleifend.
+            <br>
+            <br>
+            Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices.
             Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat.
             Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis,
             consequat velit ut, ultrices orci. Nulla varius elementum erat vel
@@ -47,13 +49,13 @@
         <div class="container">
       <div class="form-1">
         <h2 class="text-form-1">Seu nome:</h2>
-        <input type="text" name="nome" id="nome" />
+        <input class="form-btn" type="text" name="nome" id="nome" />
 
-        <h2 class="text-form-1">E-mail</h2>
-        <input type="email" name="email" id="email" />
+        <h2 class="text-form-1">E-mail:</h2>
+        <input class="form-btn" type="email" name="email" id="email" />
 
-        <h2 class="text-form-1">CPF</h2>
-        <input type="number" name="cpf" id="cpf" />
+        <h2 class="text-form-1">CPF:</h2>
+        <input class="form-btn" type="number" name="cpf" id="cpf" />
         <div class="check">
             <div class="form-check">
             <input
@@ -64,7 +66,7 @@
                 value="option1"
                 checked
             />
-            <label class="form-check-label" for="exampleRadios1"> Homem </label>
+            <label class="form-check-label" for="exampleRadios1"> Masculino </label>
             </div>
             <div class="form-check">
             <input
@@ -74,20 +76,15 @@
                 id="exampleRadios2"
                 value="option2"
             />
-            <label class="form-check-label" for="exampleRadios2"> Mulher </label>
+            <label class="form-check-label" for="exampleRadios2"> Feminino </label>
             </div>
         </div>
         <button class="form-btn" type="submit">Enviar</button>
         </div>
     </div>
     </div>
-      <h1>Sua seleção especial</h1>
+      <h1 class="text-center lined-title">Sua seleção especial</h1>
 
-      <section class="listProducts">
-        <div id="listProducts" class="listProducts">
-
-        </div>
-      </section>
       <section id="grid-products" class="margin-b-4 grid-products">
       </section>
 
@@ -95,24 +92,36 @@
           <button id="button-more-products" class="button button-large font-size-big">Ainda mais produtos
               aqui!</button>
 
-      <h1><strong>Compartilhe a novidade</strong></h1>
-      <h3>
-        Quer que seus amigos também ganhem a lista personalizada deles? Preencha
-        agora!
-      </h3>
+                <h1 class="hr-fotter lined-title"><strong>Compartilhe a novidade</strong></h1>
 
-      <h3>Nome do seu amigo:</h3>
-      <input type="text" name="nome-amigo" id="nome-amigo" />
-
-      <h3>E-mail:</h3>
-      <input type="email" name="email-amigo" id="email-amigo" />
+                  <h3 class="title-fotter">
+                    Quer que seus amigos também ganhem a lista personalizada deles? Preencha
+                    agora!
+                  </h3>
+                
+                <div class="form-friend">
+                  <div class="container">
+                  <div class="send-friend-1">
+                    <h3>Nome do seu amigo:</h3>
+                    <input class="form-btn" type="text" name="name-friend" id="name-friend" />
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="send-friend-2">
+                    <h3>E-mail:</h3>
+                    <input class="form-btn" type="email" name="email-friend" id="email-friend" />
+                  </div>
+                </div>
+                
+            </div>
+            <button class="form-btn-fotter">Enviar agora</button>
     </main>
-    <footer>
-      <h3>
-        Testando suas habilidades em HTML, CSS e JS. <br />
-        Linx Impulse <br />
-        2019
-      </h3>
+    <footer class="rodape">
+      
+        <p>Testando suas habilidades em HTML, CSS e JS.</p>
+        <p>Linx Impulse</p> 
+        <p>2019</p>
+      
     </footer>
     <script src="./script.js" defer></script>
   </body>

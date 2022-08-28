@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face { font-family: Delicious; src: url('Delicious-Roman.otf'); } 
 @font-face { font-family: Delicious; font-weight: bold; src: url('Delicious-Bold.otf'); }
 
@@ -71,7 +72,9 @@
 }
 main {
     padding-left: 150px;
+    padding-right-left: 150px;
     padding-right: 150px;
+    padding-top: 36px;
     padding-top: 36px;
 }
 .conteudo-1 {
@@ -84,6 +87,7 @@ main {
     letter-spacing: 0px;
     color: #888888;
     opacity: 1;
+    padding-bottom: 24px;
     padding-bottom: 24px;
 }
 .text-conteudo-2 {
@@ -115,13 +119,66 @@ main {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   color: #888888;
+  color: #888888;
   border-radius: 4px;
   opacity: 1;
+  padding: 6px;
   padding: 6px;
 }
 .products {
     display: flex;
     flex-direction: row;
+}
+.title-fotter {
+  padding-top: 30px;
+}
+
+.hr-fotter {
+  padding: 24px;
+  justify-content: center;
+  text-align: center;
+
+}
+.form-friend {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+}
+.send-friend-1 {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+  
+}
+.send-friend-2 {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.form-btn-fotter {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  color: #888888;
+  border-radius: 4px;
+  opacity: 1;
+  padding: 6px 54px 6px 54px;
+}
+.rodape {
+  padding: 158px 0 16px;
+  background: #707070;
+  background: linear-gradient(-3deg, #707070 71%, white 71.4%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .title-fotter {
   padding-top: 30px;
@@ -219,6 +276,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 40px;
   padding-top: 40px;
 }
 .grid-products .product {

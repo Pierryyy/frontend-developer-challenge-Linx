@@ -47,13 +47,13 @@
             </p>
         </div>
         <div class="container">
-      <div class="form-1">
+      <form action="#" method="post" class="form-1">
         <h2 class="text-form-1">Seu nome:</h2>
-        <input class="form-btn" type="text" name="nome" id="nome" />
+        <input required autofocus class="form-btn" type="text" name="nome" id="nome" />
 
         <h2 class="text-form-1">E-mail:</h2>
-        <input class="form-btn" type="email" name="email" id="email" />
-
+        <input required autofocus class="form-btn" type="email" name="email" id="email" />
+        <P id="msgemail"></P>
         <h2 class="text-form-1">CPF:</h2>
         <input class="form-btn" type="number" name="cpf" id="cpf" />
         <div class="check">
@@ -79,8 +79,8 @@
             <label class="form-check-label" for="exampleRadios2"> Feminino </label>
             </div>
         </div>
-        <button class="button form-btn" type="submit">Enviar</button>
-        </div>
+        <button class="button form-btn" id="send" type="submit">Enviar</button>
+        </form>
     </div>
     </div>
       <h1 class="text-center lined-title">Sua seleção especial</h1>
@@ -98,23 +98,24 @@
                     Quer que seus amigos também ganhem a lista personalizada deles? Preencha
                     agora!
                   </h3>
-                
+          <form action="" method="post">
                 <div class="form-friend">
+                    <div class="container">
+                      <div class="send-friend-1">
+                          <h3>Nome do seu amigo:</h3>
+                          <input required class="form-btn" type="text" name="name-friend" id="name-friend" />
+                      </div>
+                  </div>
                   <div class="container">
-                  <div class="send-friend-1">
-                    <h3>Nome do seu amigo:</h3>
-                    <input required class="form-btn" type="text" name="name-friend" id="name-friend" />
+                    <div class="send-friend-2">
+                      <h3>E-mail:</h3>
+                      <input required class="form-btn" type="email" name="email-friend" id="email-friend" />
+                    </div>
                   </div>
                 </div>
-                <div class="container">
-                  <div class="send-friend-2">
-                    <h3>E-mail:</h3>
-                    <input required class="form-btn" type="email" name="email-friend" id="email-friend" />
-                  </div>
-                </div>
-                </div>
-            </div>
+  
             <button class="button form-btn-fotter">Enviar agora</button>
+          </form>
     </main>
     <footer class="rodape">
       

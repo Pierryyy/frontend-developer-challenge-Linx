@@ -59,6 +59,8 @@
     border: 1px solid #707070;
     border-radius: 4px;
     opacity: 1;
+    width: 160px;
+    height: 40px;
 }
 .text-header {
     text-align: center;
@@ -127,6 +129,25 @@ main {
   padding-top: 30px;
 }
 
+.lined-title {
+  display: table;
+  white-space: nowrap;
+}
+.lined-title:before, .lined-title:after {
+  border-top: 1px solid #707070;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 45%;
+}
+.lined-title:before {
+  right: 1%;
+}
+.lined-title:after {
+  left: 1%;
+}
+
 .hr-fotter {
   padding: 24px;
   justify-content: center;
@@ -188,62 +209,45 @@ main {
   margin: 0 auto 90px;
 }
 
-[class*="container grid-column"] {
-  display: grid;
-  gap: 30px 60px;
-  grid-template-columns: 520px auto;
-}
-[class*="container grid-column"] .container__textual-content .container__textual-content__title {
-  font-weight: 400;
-}
-[class*="container grid-column"] .container__textual-content .container__textual-content__description {
-  line-height: 1.5;
-}
+
 .text-center {
   align-items: center;
   text-align: center;
 }
-.page__footer {
-  padding: 158px 0 86px;
-  background: #707070;
-  background: linear-gradient(-3deg, #707070 71%, white 71.4%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.page__footer * {
-  font-size: 12px;
-}
 .grid-products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 40px;
+  justify-content: space-between;
+  padding: 50px
 }
-.grid-products .product {
-  width: 200px;
+.product {
+  width: 250px;
   margin-bottom: 40px;
 }
-.grid-products .product figure {
+.product figure {
   margin: 0 0 10px;
 }
-.grid-products .product figure img {
-  width: 200px;
+.product figure img {
+  width: 218px;
   height: 150px;
 }
-.grid-products .product .product__title {
+.product-title {
   font-size: 14px;
   margin-bottom: 10px;
 }
-.grid-products .product .product__description {
-  margin: 0 0 12px;
+.product-descprition {
+  padding-top: 5px;
 }
-.grid-products .product .product_atual_price {
+.product-price {
+  padding-top: 5px;
+}
+.product-atual-price {
   font-size: 16px;
+  padding-top: 5px;
 }
-.grid-products .product .product_payment_form {
+.product-payment-form {
   margin: 0 0 15px;
+  padding-top: 5px;
 }
 .button {
   background-color: #fff;
@@ -256,12 +260,11 @@ main {
   cursor: pointer;
 }
 .button:active {
-  
   font-size: 13px;
 }
 
 .button-small {
-  padding: 8px;
+  padding: 8px  80px 8px 80px;
 }
 
 .button-large {
@@ -306,6 +309,9 @@ img {
   }
   .form-friend{
     flex-direction: column;
+    gap: 0;
+    padding: 0;
+    padding-top: 10px;
   }
   .text-center {
     width: 100%;

@@ -38,13 +38,13 @@ class Produtos {
                 </figure>
             </header>
             <section>
-                <h5 class="product__title">${name}</h5>
-                <p class="product__description">
+                <h5 class="product-title">${name}</h5>
+                <p class="product-description">
                     ${description}
                 </p>
-                <div class="product_price">De: R$${oldPrice}</div>
-                <div class="product_atual_price text-bold">Por: R$${price}</div>
-                <div class="product_payment_form">ou ${installments.count}x de R$${installments.value}</div>
+                <div class="product-price">De: R$${oldPrice}</div>
+                <div class="product-atual-price text-bold">Por: R$${price}</div>
+                <div class="product-payment-form">ou ${installments.count}x de R$${installments.value}</div>
                 <div>
                     <button class="button button-small width-100 font-size-big text-center" href="#" target="_blank"
                         rel="noopener noreferrer">Comprar</button>

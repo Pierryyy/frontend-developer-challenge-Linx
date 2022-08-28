@@ -141,12 +141,6 @@ main {
   top: 0.5em;
   width: 45%;
 }
-.lined-title:before {
-  right: 1%;
-}
-.lined-title:after {
-  left: 1%;
-}
 
 .hr-fotter {
   padding: 24px;
@@ -315,5 +309,10 @@ img {
   }
   .text-center {
     width: 100%;
+  }
+  .grid-products {
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
   }
 }

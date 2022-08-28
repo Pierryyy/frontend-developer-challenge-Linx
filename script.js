@@ -1,4 +1,4 @@
-class HomeComponent {
+class Produtos {
     currentPage =
         "https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1";
     nextPage = "";
@@ -46,8 +46,8 @@ class HomeComponent {
                 <div class="product_atual_price text-bold">Por: R$${price}</div>
                 <div class="product_payment_form">ou ${installments.count}x de R$${installments.value}</div>
                 <div>
-                    <a class="button button-small width-100 font-size-big text-center" href="#" target="_blank"
-                        rel="noopener noreferrer">Comprar</a>
+                    <button class="button button-small width-100 font-size-big text-center" href="#" target="_blank"
+                        rel="noopener noreferrer">Comprar</button>
                 </div>
             </section>
         `;
@@ -74,5 +74,5 @@ class DataService {
 }
 
 (function () {
-    return new HomeComponent();
+    return new Produtos();
 })();

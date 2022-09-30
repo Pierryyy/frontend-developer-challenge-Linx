@@ -1,6 +1,9 @@
 ## frontend developer challenge Linx
 
 Teste Técnico Realizado com base no Repósitorio: https://github.com/chaordic/frontend-developer-challenge
+Link do layout: https://xd.adobe.com/spec/4025e242-a495-4594-71d2-5fd89d774b57-3614
+
+
 
 Esse projeto pode ser testado aqui 👉https://frontend-developer-challenge-linx.netlify.app
 
